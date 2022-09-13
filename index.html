@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+		<meta charset = "utf-8">
+		
+		<title>Metric / Imperial Unit Conversion</title>
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+	</head>
+    <body>
+		<div id = "theme-change-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id = "dark-on">
+				<path d="M13 0c.81 0 1.603.074 2.373.216C10.593 1.199 7 5.43 7 10.5 7 16.299 11.701 21 17.5 21c2.996 0 5.7-1.255 7.613-3.268C23.22 22.572 18.51 26 13 26 5.82 26 0 20.18 0 13S5.82 0 13 0z"/>
+			</svg>
+			<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" id = "light-on" class = "hide">
+				<path d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/>
+			</svg>
+		</div>
+		<main class = "main-content">
+			<div class = "input-section">
+				<h1 id = "input-section-header">Metric / Imperial Unit Conversion</h1>
+				<input type="text" id = "input-field" />
+				<button id = "convert-btn">Convert</button>
+			</div>
+			<div class = "result-section">
+				<div class = "result-section-unit">
+					<h2 class = "unit-header">Length (Meter / Feet)</h2>
+					<div class = "converted-unit">
+						<p id = "meters">meters to feet</p>
+						<p id = "feet">feet to meters</p>
+					</div>
+				</div>
+				<div class = "result-section-unit">
+					<h2 class = "unit-header">Volume (Liters / Gallons)</h2>
+					<div class = "converted-unit">
+						<p id = "liters">liters to gallons</p>
+						<p id = "gallons">gallons to liters</p>
+					</div>
+				</div>
+				<div class = "result-section-unit">
+					<h2 class = "unit-header">Mass (Kilograms / Pounds)</h2>
+					<div class = "converted-unit">
+						<p id = "kilos">kilos to pounds</p>
+						<p id = "pounds">pounds to kilos</p>
+					</div>
+				</div>
+			</div>
+			<p class = "footer">
+				Created by 
+				<a class = "footer-link" href = "https://github.com/Umlen" target = "_blank">
+					Viktor P
+				</a>.
+			</p>
+		</main>
+        <script src="index.js"></script>
+    </body>
+</html>
